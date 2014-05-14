@@ -1,4 +1,4 @@
-var ss = require('simple-statistics'),
+var ss = require('simple-statistics')
 
 module.exports = function(fc, field, num){
   var vals = []
