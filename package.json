@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/morganherlocker/turf-jenks",
   "devDependencies": {
-    "tape": "^2.12.3"
+    "tape": "^2.13.4"
   },
   "dependencies": {
-    "simple-statistics": "^0.8.0"
+    "simple-statistics": "^0.8.1"
   }
 }
