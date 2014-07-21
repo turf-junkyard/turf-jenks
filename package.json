@@ -1,6 +1,6 @@
 {
   "name": "turf-jenks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "turf jenks module",
   "main": "index.js",
   "scripts": {
