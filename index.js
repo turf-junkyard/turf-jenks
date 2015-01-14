@@ -4,10 +4,10 @@ var ss = require('simple-statistics');
 * Given a FeatureCollection, return the [Jenks Natural breaks](http://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization)
 * of a given property
 * @module turf/jenks
-* @param {FeatureCollection} input
-* @param {string} field
-* @param {number} numberOfBreaks
-* @return {Array<number>} the number of breaks
+* @param {FeatureCollection} input a FeatureCollection of any type
+* @param {string} field the property in `input` on which to calculate Jenks natural breaks
+* @param {number} numberOfBreaks number of classes in which to group the data
+* @return {Array<number>} the break number for each class plus the minimum and maximum values
 * @example
 * var points = turf.featurecollection([
 *   turf.point(5,5, {population: 200}),
