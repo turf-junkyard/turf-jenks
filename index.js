@@ -10,11 +10,11 @@ var ss = require('simple-statistics');
 * @return {Array<number>} the break number for each class plus the minimum and maximum values
 * @example
 * var points = turf.featurecollection([
-*   turf.point(49.859733, 40.400424, {population: 200}),
-*   turf.point(49.83879, 40.401209, {population: 600}),
-*   turf.point(49.817848, 40.376889, {population: 100}),
-*   turf.point(49.840507, 40.386043, {population: 200}),
-*   turf.point(49.854583, 40.37532, {population: 300})]);
+*   turf.point([49.859733, 40.400424], {population: 200}),
+*   turf.point([49.83879, 40.401209], {population: 600}),
+*   turf.point([49.817848, 40.376889], {population: 100}),
+*   turf.point([49.840507, 40.386043], {population: 200}),
+*   turf.point([49.854583, 40.37532], {population: 300})]);
 * var breaks = turf.jenks(points, 'population', 3);
 * //=breaks
 */
