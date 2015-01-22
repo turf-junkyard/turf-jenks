@@ -1,8 +1,8 @@
 var ss = require('simple-statistics');
 
 /**
-* Given a FeatureCollection, return the [Jenks Natural breaks](http://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization)
-* of a given property
+* Takes a {@FeatureCollection} of any type and returns an array of the [Jenks Natural breaks](http://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization)
+* for a given property
 * @module turf/jenks
 * @param {FeatureCollection} input a FeatureCollection of any type
 * @param {string} field the property in `input` on which to calculate Jenks natural breaks
@@ -15,7 +15,9 @@ var ss = require('simple-statistics');
 *   turf.point([49.817848, 40.376889], {population: 100}),
 *   turf.point([49.840507, 40.386043], {population: 200}),
 *   turf.point([49.854583, 40.37532], {population: 300})]);
+*
 * var breaks = turf.jenks(points, 'population', 3);
+*
 * //=breaks
 */
 module.exports = function(fc, field, num){
