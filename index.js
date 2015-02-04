@@ -9,12 +9,57 @@ var ss = require('simple-statistics');
 * @param {number} numberOfBreaks number of classes in which to group the data
 * @return {Array<number>} the break number for each class plus the minimum and maximum values
 * @example
-* var points = turf.featurecollection([
-*   turf.point([49.859733, 40.400424], {population: 200}),
-*   turf.point([49.83879, 40.401209], {population: 600}),
-*   turf.point([49.817848, 40.376889], {population: 100}),
-*   turf.point([49.840507, 40.386043], {population: 200}),
-*   turf.point([49.854583, 40.37532], {population: 300})]);
+* var points = {
+*   "type": "FeatureCollection",
+*   "features": [
+*     {
+*       "type": "Feature",
+*       "properties": {
+*         "population": 200
+*       },
+*       "geometry": {
+*         "type": "Point",
+*         "coordinates": [49.859733, 40.400424]
+*       }
+*     }, {
+*       "type": "Feature",
+*       "properties": {
+*         "population": 600
+*       },
+*       "geometry": {
+*         "type": "Point",
+*         "coordinates": [49.83879, 40.401209]
+*       }
+*     }, {
+*       "type": "Feature",
+*       "properties": {
+*         "population": 100
+*       },
+*       "geometry": {
+*         "type": "Point",
+*         "coordinates": [49.817848, 40.376889]
+*       }
+*     }, {
+*       "type": "Feature",
+*       "properties": {
+*         "population": 200
+*       },
+*       "geometry": {
+*         "type": "Point",
+*         "coordinates": [49.840507, 40.386043]
+*       }
+*     }, {
+*       "type": "Feature",
+*       "properties": {
+*         "population": 300
+*       },
+*       "geometry": {
+*         "type": "Point",
+*         "coordinates": [49.854583, 40.37532]
+*       }
+*     }
+*   ]
+* };
 *
 * var breaks = turf.jenks(points, 'population', 3);
 *
