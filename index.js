@@ -66,12 +66,12 @@ var ss = require('simple-statistics');
 *
 * //=breaks
 */
-module.exports = function(fc, field, num){
+module.exports = function(fc, field, num) {
   var vals = [];
   var breaks = [];
 
-  fc.features.forEach(function(feature){
-    if(feature.properties[field]!==undefined){
+  fc.features.forEach(function(feature) {
+    if(feature.properties[field]!==undefined) {
       vals.push(feature.properties[field]);
     }
   });
